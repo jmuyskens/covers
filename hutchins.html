@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>heidegger</title>
+  <style>
+
+    @keyframes rotate0 {
+      from { transform: translate(0px, 0px)rotate(0deg); }
+      to   { transform: translate(0px, 0px)rotate(360deg); }}
+
+    @keyframes rotate1 {
+      from { transform: translate(75px, 75px)rotate(0deg); }
+      to   { transform: translate(75px, 75px)rotate(360deg); }}
+
+    @keyframes rotate2 {
+      from { transform: translate(125px, 125px)rotate(0deg);}
+      to   { transform: translate(125px, 125px)rotate(360deg); }}
+
+    @keyframes rotate3 {
+      from { transform: translate(160px, 160px)rotate(0deg);}
+      to   { transform: translate(160px, 160px)rotate(360deg);}}
+
+    @keyframes rotate4 {
+      from { transform: translate(186px, 186px)rotate(0deg);}
+      to { transform: translate(186px, 186px)rotate(360deg);}
+    }
+
+    @keyframes rotate5 {
+      from { transform: translate(205px, 205px)rotate(0deg);}
+      to {transform: translate(205px, 205px)rotate(360deg);}
+    }
+
+    @keyframes rotate6 {
+      from { transform: translate(218px, 218px)rotate(0deg);}
+      to {transform: translate(218px, 218px)rotate(360deg);}
+    }
+
+    .square {
+      position: absolute;
+    }
+
+    #square0 {
+      width: 500px;
+      height: 500px;
+      background: #7D6F13;
+    }
+
+    #square1 {
+      width: 350px;
+      height: 350px;
+      background: #303A23;
+      animation: rotate1 5.6186532345s linear infinite;
+    }
+
+    #square2 {
+      width: 250px;
+      height: 250px;
+      background: #5561BE;
+      animation: rotate2 4.2139899259s linear infinite;
+    }
+
+    #square3 {
+      width: 179px;
+      height: 179px;
+      background: #E8DDD5;
+      animation: rotate3 3.1604924444s linear infinite;
+    }
+
+    #square4 {
+      width: 128px;
+      height: 128px;
+      background: #797A03;
+      animation: rotate4 2.3703s linear infinite;
+    }
+
+    #square5 {
+      width: 91px;
+      height: 91px;
+      background: #2D3921;
+      animation: rotate5 1.333333s linear infinite;
+    }
+
+    #square6 {
+      width: 65px;
+      height: 65px;
+      background: #5962CB;
+      animation: rotate6 1s linear infinite;
+    }
+
+  </style>
+</head>
+<body>
+<div id="container">
+  <div class="square" id="square0"></div>
+  <div class="square" id="square1"></div>
+  <div class="square" id="square2"></div>
+  <div class="square" id="square3"></div>
+  <div class="square" id="square4"></div>
+  <div class="square" id="square5"></div>
+  <div class="square" id="square6"></div>
+</div>
+</body>
+</html>

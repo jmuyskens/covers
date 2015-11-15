@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>heidegger</title>
+  <style>
+	@keyframes red0 {
+
+		0% {
+			-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+		}
+
+		47.5% {
+			-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+		}
+
+		50% {
+			-webkit-clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 100% 0%);
+		}
+
+		97.5% {
+			-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+
+		}
+
+
+	}
+
+	@keyframes green0 {
+
+
+		5% {
+			z-index: 20;
+			-webkit-clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 100% 0%);
+		}
+
+		47.5% {
+			z-index: 20;
+			-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+		}
+
+		50% {
+			z-index: 0;
+		}
+
+	}
+
+	div {
+		display: inline-block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 1.5px;
+	}
+
+	div:after {
+		content: '';
+		display: block;
+    	position: absolute;
+		background-color: #FB121B;
+		width: 100px;
+		height: 100px;
+	}
+
+	div:before {
+		content: '';
+		display: block;
+    	position: absolute;
+		background-color: #0EB044;
+		width: 100px;
+		height: 100px;
+	}
+
+	#square0:before {
+		animation: green0 10s linear infinite;
+	}
+
+	#square0:after {
+		animation: red0 10s linear infinite;
+	}
+
+	#square1:before {
+		animation: green0 10s linear 0.5s infinite;
+	}
+
+	#square1:after {
+		animation: red0 10s linear 0.5s infinite;
+	}
+
+	#square2:before {
+		animation: green0 10s linear 1s infinite;
+	}
+
+	#square2:after {
+		animation: red0 10s linear 1s infinite;
+	}
+
+	#square3 {
+		clear: both;
+	}
+
+	#square3:before {
+		animation: green0 10s linear 1.5s infinite;
+	}
+
+	#square3:after {
+		animation: red0 10s linear 1.5s infinite;
+	}
+
+	#square4:before {
+		animation: green0 10s linear 2s infinite;
+	}
+
+	#square4:after {
+		animation: red0 10s linear 2s infinite;
+	}
+
+	#square5:before {
+		animation: green0 10s linear 2.5s infinite;
+	}
+
+	#square5:after {
+		animation: red0 10s linear 2.5s infinite;
+	}
+
+	#square6 {
+		clear: both;
+	}
+
+	#square6:before {
+		animation: green0 10s linear 3s infinite;
+	}
+
+	#square6:after {
+		animation: red0 10s linear 3s infinite;
+	}
+
+	#square7:before {
+		animation: green0 10s linear 3.5s infinite;
+	}
+
+	#square7:after {
+		animation: red0 10s linear 3.5s infinite;
+	}
+
+	#square8:before {
+		animation: green0 10s linear 4s infinite;
+	}
+
+	#square8:after {
+		animation: red0 10s linear 4s infinite;
+	}
+
+	#square9:before {
+		animation: green0 10s linear 4.5s infinite;
+	}
+
+	#square9:after {
+		animation: red0 10s linear 4.5s infinite;
+	}
+
+
+  </style>
+</head>
+<body>
+  <div id="square0"></div>
+  <div id="square1"></div>
+  <div id="square2"></div>
+
+  <div id="square3"></div>
+  <div id="square4"></div>
+  <div id="square5"></div>
+
+  <div id="square6"></div>
+  <div id="square7"></div>
+  <div id="square8"></div>
+</body>
+</html>
